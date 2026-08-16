@@ -29,6 +29,7 @@ Relevant Information
 ```
 
 ![alt text](src/image.png)
+
 The documents are first converted into embeddings and stored in ChromaDB. When a user asks a question, the agent retrieves the relevant information and passes it to the Groq LLM to generate a response.
 
 ### Project Files
