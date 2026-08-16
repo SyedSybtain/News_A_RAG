@@ -2,6 +2,9 @@
 
 This project is an **Agentic RAG (Retrieval-Augmented Generation)** system built to answer questions from a dataset related to the **US-Iran War and related events**.
 
+Dataset Link : https://www.kaggle.com/datasets/solowpm23/iran-vs-us-coflict-news-dataset
+
+
 The system uses AI agents to decide how to retrieve and use relevant information before generating an answer.
 
 ### Technologies Used
@@ -44,5 +47,7 @@ The documents are first converted into embeddings and stored in ChromaDB. When a
 ### Goal
 
 The main goal of this project is to build a simple **agent-based RAG system** that can retrieve information from the US-Iran War dataset and provide useful, context-based answers.
+
+
 
 > This project is developed for **educational and research purposes**.
