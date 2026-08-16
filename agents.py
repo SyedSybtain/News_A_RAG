@@ -1,11 +1,6 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-
-# ============================================================
-# AGENT 1: RETRIEVER AGENT
-# ============================================================
-
 def create_retriever_agent(llm):
 
     prompt = ChatPromptTemplate.from_template("""
@@ -36,11 +31,6 @@ Return the relevant evidence in a concise format.
     chain = prompt | llm | StrOutputParser()
 
     return chain
-
-
-# ============================================================
-# AGENT 2: ANALYST AGENT
-# ============================================================
 
 def create_analyst_agent(llm):
 
@@ -73,10 +63,6 @@ Your output will be passed to Agent 3.
 
     return chain
 
-
-# ============================================================
-# AGENT 3: FINAL ANSWER AGENT
-# ============================================================
 
 def create_answer_agent(llm):
 
@@ -115,10 +101,6 @@ FINAL ANSWER:
 
     return chain
 
-
-# ============================================================
-# CREATE ALL THREE AGENTS
-# ============================================================
 
 def create_agents(llm):
 
